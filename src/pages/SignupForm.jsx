@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { supabase } from "../lib/supabaseClient";
 import { toast } from "react-toastify";
 
-const SignUpForm = () => {
+const SignupForm = () => {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [memberId, setMemberId] = useState(null);
@@ -288,4 +288,4 @@ const SignUpForm = () => {
   );
 };
 
-export default SignUpForm;
+export default SignupForm;

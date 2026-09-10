@@ -14,7 +14,6 @@ import InviteList from "./pages/InviteList";
 import Members from "./pages/members/Members";
 import AddMember from "./pages/members/AddMember";
 import EditMember from "./pages/members/EditMember";
-import SignUpForm from "./pages/SignUpForm";
 import Products from "./pages/Products";
 import Payment from "./pages/Payment";
 
@@ -27,6 +26,7 @@ import Billing from "./pages/Billing";
 import Analytics from "./pages/Analytics";
 import Setting from "./pages/Setting";
 import Landing from "./pages/Landing";
+import SignupForm from "./pages/SignupForm";
 
 const AppLayout = () => {
   const location = useLocation();
@@ -114,7 +114,7 @@ const AppLayout = () => {
           element={
             <ProtectedRout>
               <RoleRoute allowedRoles={["member"]}>
-                <SignUpForm />
+                <SignupForm />
               </RoleRoute>
             </ProtectedRout>
           }
