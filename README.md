@@ -1,16 +1,181 @@
-# React + Vite
+# GymFlow — Gym Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+GymFlow is a web-based Gym Management System designed to simplify daily gym operations such as member management, memberships, payments, check-ins, billing, calendar activities, and role-based access.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Visit GymFlow](https://gym-management-system-hc.netlify.app/)
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View Source Code](https://github.com/Harpal-Chauhan/Gym-Management-System)
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## ✨ Features
+
+- User Registration and Login
+- Role-Based Access Control
+- Admin User Invitations
+- Member Management
+- Membership/Product Management
+- Payment Management
+- Member Check-In / Check-Out
+- Calendar Management
+- Member Signup Form
+- Member Billing
+- Admin Analytics
+- Responsive UI
+- Supabase Authentication and Database
+- Row Level Security (RLS)
+
+---
+
+## 👥 User Roles
+
+| Role | Access |
+|------|--------|
+| **Admin** | Full system access, user invitations, members, products, payments, check-ins, calendar and analytics |
+| **Manager** | Members, products, payments, check-ins and calendar |
+| **Trainer** | Dashboard, calendar and settings |
+| **Member** | Dashboard, signup form, calendar, settings and billing |
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- React Toastify
+- Lucide React
+
+### Backend & Database
+
+- Supabase
+- PostgreSQL
+- Supabase Authentication
+- Row Level Security (RLS)
+- PostgreSQL Functions & Triggers
+
+### Deployment
+
+- GitHub
+- Netlify
+
+---
+
+## 📁 Project Structure
+
+```text
+Gym-Management-System/
+└── client/
+    ├── public/
+    ├── src/
+    │   ├── components/
+    │   │   ├── Navbar.jsx
+    │   │   ├── ProtectedRout.jsx
+    │   │   └── RoleRoute.jsx
+    │   │
+    │   ├── lib/
+    │   │   └── supabaseClient.js
+    │   │
+    │   ├── pages/
+    │   │   ├── Landing.jsx
+    │   │   ├── Login.jsx
+    │   │   ├── Register.jsx
+    │   │   ├── Dashboard.jsx
+    │   │   ├── InviteUser.jsx
+    │   │   ├── InviteList.jsx
+    │   │   ├── SignupForm.jsx
+    │   │   ├── Products.jsx
+    │   │   ├── Payment.jsx
+    │   │   ├── Billing.jsx
+    │   │   ├── CheckIn.jsx
+    │   │   ├── Calender.jsx
+    │   │   ├── Analytics.jsx
+    │   │   ├── Setting.jsx
+    │   │   │
+    │   │   └── members/
+    │   │       ├── Members.jsx
+    │   │       ├── AddMember.jsx
+    │   │       └── EditMember.jsx
+    │   │
+    │   ├── App.jsx
+    │   └── main.jsx
+    │
+    ├── .env.local
+    ├── package.json
+    ├── package-lock.json
+    ├── vite.config.js
+    └── index.html
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Harpal-Chauhan/Gym-Management-System.git
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env.local` file:
+
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+> Do not commit `.env.local` or private credentials to GitHub.
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+### 5. Create Production Build
+
+```bash
+npm run build
+```
+
+---
+
+## 🔐 Security
+
+GymFlow uses Supabase Row Level Security (RLS) and role-based access control to protect application data.
+
+Access to different features is controlled according to the user's role.
+
+---
+
+## 📌 Project Status
+
+**Completed and Deployed 🚀**
+
+GymFlow is deployed on Netlify and available online.
+
+**Live Website:**  
+https://gym-management-system-hc.netlify.app/
+
+---
+
+## 👨‍💻 Author
+
+**Harpal Chauhan**
+
+MSc IT
